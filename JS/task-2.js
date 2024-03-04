@@ -1,4 +1,11 @@
-
+function formatMessage(message, maxLength) {
+    if (message <= maxLength) {
+        return formatMessage;
+    
+    } else {
+        return (message.slice(message, maxLength));
+    
+}}
 
 
 
