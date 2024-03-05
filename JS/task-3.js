@@ -1,6 +1,12 @@
-checkForSpam(message) {
-    return (message === "spam" || message === "sale");
+checkForSpam(message){
+    if ((message.toUpperCase()).includes(spam.toUpperCase())) || ((message.toUpperCase()).includes(sale.toUpperCase())) {
+        return true;
+    } else {
+        return false;
     }
+}
+  
+
 
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false

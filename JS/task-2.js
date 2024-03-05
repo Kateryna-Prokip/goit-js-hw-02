@@ -3,9 +3,11 @@ function formatMessage(message, maxLength) {
         return formatMessage;
     
     } else {
-        return (message.slice(message, maxLength));
+        return
+        (message.slice(0, maxLength) + "...");
+    }
+}
     
-}}
 
 
 
