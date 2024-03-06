@@ -1,10 +1,8 @@
-checkForSpam(message){
-    if ((message.toUpperCase()).includes(spam.toUpperCase())) || ((message.toUpperCase()).includes(sale.toUpperCase())) {
-        return true;
-    } else {
-        return false;
-    }
-}
+checkForSpam(message) 
+const normalizeMessage = message.toLowerCase();
+    return ((normalizeMessage.includes("spam")) || (normalizeMessage.includes("sale")));
+    
+
   
 
 
